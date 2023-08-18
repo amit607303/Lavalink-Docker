@@ -10,6 +10,6 @@ RUN apt-get update --no-install-recommends -y && apt-get install curl wget jq -y
 RUN chmod a+x ./download.sh && ./download.sh && rm ./download.sh
 # Run jar file
 
-EXPOSE 2333
+EXPOSE 433
 
 CMD ["java", "-jar", "Lavalink.jar"]
